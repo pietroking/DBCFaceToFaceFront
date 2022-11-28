@@ -1,0 +1,11 @@
+[ {
+  "uid" : "eb773da57f75dea7",
+  "name" : "pesquisa",
+  "time" : {
+    "start" : 1669607078527,
+    "stop" : 1669607080842,
+    "duration" : 2315
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
