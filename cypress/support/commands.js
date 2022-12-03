@@ -23,6 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-// beforeEach(() => {
-//     cy.visit("")
-// });
+beforeEach(() => {
+    // cy.visit("http://vemser-dbc.dbccompany.com.br:39000/yuriatzler/facetoface-front")
+    cy.visit("https://facetoface-front.vercel.app/")
+});
