@@ -28,7 +28,7 @@ context('Login', () => {
         loginPage.loginNoSistemaSemPreencherCampoUser();
     });
 
-    it('Validar redirecionamento esqueci minha senhna', () => {
+    it('Validar redirecionamento esqueci minha senha', () => {
         loginPage.recoveryPassword();
     });
 })

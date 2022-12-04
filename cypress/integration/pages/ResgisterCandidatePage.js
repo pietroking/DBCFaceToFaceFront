@@ -10,7 +10,7 @@ let cv = "#input-cv-register-candidate"
 let edicao = "#select-edition"
 let turma = "#qa-register-candidate"
 let enviarBtn = "#button-submit-register-candidate"
-let Foto = "#form-register-candidate > div.MuiBox-root.css-1qjhpkf > button"
+let observacao = "#input-observation-register-candidate"
 let linguagem = "#input-languages-register-candidate"
 let addLinguagem = "#form-register-candidate > div:nth-child(3) > div:nth-child(4) > div > div > div > button"
 let msgNome = "#error-name-register-candidate"
@@ -41,12 +41,47 @@ export default class RegisterCandidatePage extends BasePage {
         basePage.preencherInput(email, emailCandidato)
         basePage.preencherInput(cidade, cidadeCandidato)
         basePage.preencherInput(estado, estadoCandidato)
+        basePage.preencherInput(linguagem, 'JAVA')
+        basePage.click(addLinguagem)
+        basePage.click(edicao)
+        basePage.click(value)
+        basePage.click(genero)
+        basePage.click(turma)
+        basePage.preencherInput(observacao, 'OBS TESTE')
+        basePage.click(enviarBtn)
+        basePage.validarText(tostify, "Candidato cadastrado com sucesso!")
+    }
+
+    criarCandidatoCamposObrigatorios(){
+        const fileName = 'readpdf.pdf';
+        cy.fixture(fileName).then(fileContent => {
+            cy.get(cv).attachFile({ fileContent, fileName, mimeType: 'application/pdf' }, { subjectType: 'input' });
+        });
+        basePage.preencherInput(nome, nomeCandidato)
+        basePage.preencherInput(email, emailCandidato)
+        basePage.preencherInput(cidade, cidadeCandidato)
+        basePage.preencherInput(estado, estadoCandidato)
         basePage.click(edicao)
         basePage.click(value)
         basePage.click(genero)
         basePage.click(turma)
         basePage.click(enviarBtn)
         basePage.validarText(tostify, "Candidato cadastrado com sucesso!")
+    }
+
+    criarCandidatoCamposNaoObrigatorios(){
+        basePage.preencherInput(linguagem, 'JAVA')
+        basePage.click(addLinguagem)
+        basePage.preencherInput(observacao, 'OBS TESTE')
+        basePage.click(enviarBtn)
+        basePage.validarText(msgNome, "Nome completo é obrigatório!")
+        basePage.validarText(msgEmail, "E-mail é obrigatório!")
+        basePage.validarText(msgCidade, "Cidade é obrigatório!")
+        basePage.validarText(msgEstado, "Estado é obrigatório!")
+        basePage.validarText(msgGenero, "Gênero é obrigatório!")
+        basePage.validarText(msgTurma, "Trilha é obrigatória!")
+        basePage.validarText(msgEdicao, "Edição é obrigatória!")
+        basePage.validarText(msgCurriculo, "CV é obrigatório!")
     }
 
     criarCandidatoSemPreencherCampos(){

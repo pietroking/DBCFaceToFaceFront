@@ -15,8 +15,8 @@ beforeEach(() => {
 
 context('Troca de senha', () => {
     it('Validar troca de senha sem preencher campos', () => {
-        // dashboardPage.editPerfilUserPage();
-        // changePasswordPage.changePasswordPage();
-        // changePasswordPage.trocarSenhaSemPreencherCampos();
+        dashboardPage.editPerfilUserPage();
+        changePasswordPage.changePasswordPage();
+        changePasswordPage.trocarSenhaSemPreencherCampos();
     });
 })

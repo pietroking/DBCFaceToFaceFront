@@ -53,4 +53,16 @@ export default class RegisterInterviewPage extends BasePage {
         basePage.tempo(1000)
         basePage.validarText(tostify, "Entrevista cadastrada com sucesso!")
     }
+
+    criarEntrevistaCandidatoJaAgendado(){
+        basePage.preencherInput(email, emailCandidato)
+        basePage.click(buscarBnt)
+        cy.get(data).type("2022-12-07")
+        cy.get(hora).type("14:00")
+        basePage.preencherInput(obs, nomeCandidato)
+        basePage.tempo(100)
+        basePage.click(enviarBtn)
+        basePage.tempo(1000)
+        basePage.validarText(tostify, "Entrevista para o Candidato já agendada!")
+    }
 }

@@ -1,238 +1,278 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Teste executado com sucesso",
     "children" : [ {
       "children" : [ {
         "name" : "Validar troca de senha sem preencher campos",
-        "uid" : "d08b18d94bb418f5",
+        "uid" : "9da3619df94c4b80",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132519607,
-          "stop" : 1670132523215,
-          "duration" : 3608
+          "start" : 1670180116696,
+          "stop" : 1670180121738,
+          "duration" : 5042
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Busca candidato por nome",
-        "uid" : "308a6d3ddb4b6a99",
+        "uid" : "360358168e41401a",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132524914,
-          "stop" : 1670132531649,
-          "duration" : 6735
+          "start" : 1670180123636,
+          "stop" : 1670180131381,
+          "duration" : 7745
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Busca candidato por edicao",
-        "uid" : "ae4e44267f3cf99e",
+        "uid" : "1ac6aedcc8b31fa0",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132534923,
-          "stop" : 1670132538303,
-          "duration" : 3380
+          "start" : 1670180135732,
+          "stop" : 1670180140122,
+          "duration" : 4390
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Busca candidato por trilha",
-        "uid" : "a9d0366fac6e900e",
+        "uid" : "76b7b49b42d2b9d9",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132538316,
-          "stop" : 1670132541683,
-          "duration" : 3367
+          "start" : 1670180140131,
+          "stop" : 1670180144501,
+          "duration" : 4370
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "edit perfil",
-        "uid" : "19ab37bc5127cc4a",
+        "uid" : "a2b7a2a953973b4",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132541690,
-          "stop" : 1670132544882,
-          "duration" : 3192
+          "start" : 1670180144513,
+          "stop" : 1670180148701,
+          "duration" : 4188
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "cadastro de candidato e marcaçao de entrevista",
-        "uid" : "dcdd045ad7aa1cfd",
+        "uid" : "d28af17b4f32b25a",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132547352,
-          "stop" : 1670132567211,
-          "duration" : 19859
+          "start" : 1670180151494,
+          "stop" : 1670180173251,
+          "duration" : 21757
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar login com sucesso",
-        "uid" : "91d4d318c5c5ea8",
+        "uid" : "690d9e9c5c3e475b",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132569223,
-          "stop" : 1670132572522,
-          "duration" : 3299
+          "start" : 1670180175273,
+          "stop" : 1670180179555,
+          "duration" : 4282
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar login com erro",
-        "uid" : "dc6e0203528f2b9d",
+        "uid" : "e493642c40b4a4ec",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132572533,
-          "stop" : 1670132573841,
-          "duration" : 1308
+          "start" : 1670180179566,
+          "stop" : 1670180181321,
+          "duration" : 1755
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar login sem preencher campos",
-        "uid" : "ed817b9d001a5949",
+        "uid" : "6686260ad97b97a6",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132573847,
-          "stop" : 1670132574102,
-          "duration" : 255
+          "start" : 1670180181328,
+          "stop" : 1670180181584,
+          "duration" : 256
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar login sem preencher campo senha",
-        "uid" : "b08b0f993ff1eb02",
+        "uid" : "1e3318d3cd28d072",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132574105,
-          "stop" : 1670132574942,
-          "duration" : 837
+          "start" : 1670180181588,
+          "stop" : 1670180182423,
+          "duration" : 835
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar login sem preencher campo user",
-        "uid" : "79b73299564acade",
+        "uid" : "37ac7182ddd23f18",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132574947,
-          "stop" : 1670132575457,
-          "duration" : 510
+          "start" : 1670180182429,
+          "stop" : 1670180182904,
+          "duration" : 475
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Validar redirecionamento esqueci minha senhna",
-        "uid" : "1fdaaa8675a137e1",
+        "name" : "Validar redirecionamento esqueci minha senha",
+        "uid" : "9b383a45e668d254",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132575463,
-          "stop" : 1670132575727,
-          "duration" : 264
+          "start" : 1670180182909,
+          "stop" : 1670180183136,
+          "duration" : 227
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar criar candidato com sucesso",
-        "uid" : "76e83834461db94c",
+        "uid" : "c75cafe4d358b526",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132577969,
-          "stop" : 1670132585148,
-          "duration" : 7179
+          "start" : 1670180185422,
+          "stop" : 1670180196116,
+          "duration" : 10694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validar criar candidato preenchendo campos obrigatórios",
+        "uid" : "f530a4151417cf96",
+        "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670180196135,
+          "stop" : 1670180203750,
+          "duration" : 7615
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar criar candidato sem preencher campos",
-        "uid" : "b9752447e8cd3cf0",
+        "uid" : "da111e3025882146",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132585155,
-          "stop" : 1670132588485,
-          "duration" : 3330
+          "start" : 1670180203758,
+          "stop" : 1670180208104,
+          "duration" : 4346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validar criar candidato preenchendo campos nao obrigatórios",
+        "uid" : "a807a5c33a8ad6a2",
+        "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670180208130,
+          "stop" : 1670180213117,
+          "duration" : 4987
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar criar entrevista com sucesso",
-        "uid" : "c51bdbe3fc7be542",
+        "uid" : "8c129aa77656f5be",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132590284,
-          "stop" : 1670132603174,
-          "duration" : 12890
+          "start" : 1670180215259,
+          "stop" : 1670180230579,
+          "duration" : 15320
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar criar entrevista sem preencher campos",
-        "uid" : "71d371daa6a1dfc8",
+        "uid" : "7da81cd2b83ee489",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132603196,
-          "stop" : 1670132606501,
-          "duration" : 3305
+          "start" : 1670180230594,
+          "stop" : 1670180234898,
+          "duration" : 4304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validar criar entrevista para um candidato com entrevista ja marcada",
+        "uid" : "3e3b2a9add459777",
+        "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670180254873,
+          "stop" : 1670180274475,
+          "duration" : 19602
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar criar usuario com sucesso",
-        "uid" : "95c6ed3adec0c0b4",
+        "uid" : "47dce527cd5aa563",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132612211,
-          "stop" : 1670132618805,
-          "duration" : 6594
+          "start" : 1670180280692,
+          "stop" : 1670180288200,
+          "duration" : 7508
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar criar usuario sem preencher campos",
-        "uid" : "d2684dad29218c8e",
+        "uid" : "119b1653a9dba704",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670132618810,
-          "stop" : 1670132622097,
-          "duration" : 3287
+          "start" : 1670180288207,
+          "stop" : 1670180292578,
+          "duration" : 4371
         },
         "flaky" : false,
         "newFailed" : false,
@@ -241,6 +281,5 @@
       "uid" : "9c3b5bbf2e0a9a9eb5860e5891c88395"
     } ],
     "uid" : "2f199bd42e8104163d546cf52d144e07"
-  } ],
-  "name" : "categories"
+  } ]
 }

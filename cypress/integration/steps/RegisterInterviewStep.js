@@ -39,4 +39,36 @@ context('Registrar Entrevista', () => {
         dashboardPage.registerInterviewPage();
         registerInterviewPage.criarEntrevistaSemPreencherCampos();
     });
+
+    it('Validar criar entrevista para um candidato com entrevista ja marcada', () => {
+        dashboardPage.registerCandidatePage();
+        registerCandidatePage.criarCandidatoCorretamente();
+        dashboardPage.registerInterviewPage();
+        registerInterviewPage.criarEntrevistaCorretamente();
+        dashboardPage.registerInterviewPage();
+        registerInterviewPage.criarEntrevistaCandidatoJaAgendado();
+        metodos.Login().then((login) => {
+            metodos.GETcandidatoEmailRequest(email, login.body).then((candidato) => {
+                metodos.DELETEfisicoEntrevistaRequest(email, login.body)
+                metodos.DELETEfisicoCurriculoRequest(candidato.body.idCandidato, login.body)
+                metodos.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, login.body)
+            })
+        })
+    });
+
+    it('Validar criar entrevista para um candidato com entrevista ja marcada', () => {
+        dashboardPage.registerCandidatePage();
+        registerCandidatePage.criarCandidatoCorretamente();
+        dashboardPage.registerInterviewPage();
+        registerInterviewPage.criarEntrevistaCorretamente();
+        dashboardPage.registerInterviewPage();
+        registerInterviewPage.criarEntrevistaCandidatoJaAgendado();
+        metodos.Login().then((login) => {
+            metodos.GETcandidatoEmailRequest(email, login.body).then((candidato) => {
+                metodos.DELETEfisicoEntrevistaRequest(email, login.body)
+                metodos.DELETEfisicoCurriculoRequest(candidato.body.idCandidato, login.body)
+                metodos.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, login.body)
+            })
+        })
+    });
 })
