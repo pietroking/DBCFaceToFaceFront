@@ -58,8 +58,8 @@ export default class BasePage {
         cy.get(element).should("have.attr", "disabled");
     }
 
-   //  validarVisibilidade(element) {
-   //    cy.get(element).scrollIntoView().should('be.visible') 
-   //  }
+    validarVisibilidade(element) {
+      cy.get(element).scrollIntoView().should('be.visible') 
+    }
   }
   

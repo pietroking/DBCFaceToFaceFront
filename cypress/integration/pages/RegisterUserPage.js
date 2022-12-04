@@ -19,7 +19,7 @@ let msgCidade = "#error-cidade-register-user"
 let msgEstado = "#error-state-register-user"
 let msgGenero = "#error-genero-register-user"
 let msgTipo = "#error-type-register-user"
-let nomeUser = "Marta golpista"
+let nomeUser = "Marta Golpista"
 let emailUser = "pietro.bianchi@dbccompany.com.br"
 let cidadeUser = "Belo Horizonte"
 let estadoUser = "MG"
@@ -42,7 +42,7 @@ export default class RegisterUserPage extends BasePage {
     criarCandidatoSemPreencherCampos(){
         basePage.click(enviarBtn)
         basePage.validarText(msgNome, "Nome completo é obrigatório!")
-        basePage.validarText(msgEmail, "Email não pode ser vazio!")
+        basePage.validarText(msgEmail, "Email é obrigatório!")
         basePage.validarText(msgCidade, "Cidade é obrigatório!")
         basePage.validarText(msgEstado, "Estado é obrigatório!")
         basePage.validarText(msgGenero, "Gênero é obrigatório!")

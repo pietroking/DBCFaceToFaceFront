@@ -15,7 +15,7 @@ let msgDate = "#error-dateInterview-register-interview"
 let msgHora = "#error-scheduleInterview-register-interview"
 let msgObs = "#error-observation-register-interview"
 let nomeCandidato = "Marta Golpista"
-let emailCandidato = "teste@teste.com"
+let emailCandidato = "pietro.bianchi@dbccompany.com.br"
 let cidadeCandidato = "Belo Horizonte"
 let estadoCandidato = "MG"
 
@@ -42,5 +42,15 @@ export default class RegisterInterviewPage extends BasePage {
         basePage.validarText(msgDate, "Campo obrigatório!")
         basePage.validarText(msgHora, "Campo obrigatório!")
         basePage.validarText(msgObs, "Observação é obrigatório!")
+    }
+
+    criarEntrevistaTeste(){
+        cy.get(data).type("2022-12-31")
+        cy.get(hora).type("14:00")
+        basePage.preencherInput(obs, nomeCandidato)
+        basePage.tempo(100)
+        basePage.click(enviarBtn)
+        basePage.tempo(1000)
+        basePage.validarText(tostify, "Entrevista cadastrada com sucesso!")
     }
 }

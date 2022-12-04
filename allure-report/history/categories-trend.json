@@ -1,18 +1,5 @@
 [ {
   "data" : {
-    "Teste executado com sucesso" : 11,
-    "Teste falhado" : 1
-  }
-}, {
-  "data" : {
-    "Teste executado com sucesso" : 1
-  }
-}, {
-  "data" : {
-    "Teste executado com sucesso" : 1
-  }
-}, {
-  "data" : {
-    "Teste executado com sucesso" : 1
+    "Teste executado com sucesso" : 18
   }
 } ]

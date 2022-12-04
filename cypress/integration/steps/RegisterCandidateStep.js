@@ -9,6 +9,10 @@ const dashboardPage = new DashboardPage;
 import RegisterCandidatePage from "../pages/ResgisterCandidatePage"
 const registerCandidatePage = new RegisterCandidatePage;
 
+import Metodos from "../utils/Metodos"
+const metodos = new Metodos;
+let email = "pietro.bianchi@dbccompany.com.br"
+
 beforeEach(() => {
     loginPage.loginNoSistema();
 })
@@ -17,6 +21,12 @@ context('Registrar Candidato', () => {
     it('Validar criar candidato com sucesso', () => {
         dashboardPage.registerCandidatePage();
         registerCandidatePage.criarCandidatoCorretamente();
+        metodos.Login().then((login) => {
+            metodos.GETcandidatoEmailRequest(email, login.body).then((candidato) => {
+                metodos.DELETEfisicoCurriculoRequest(candidato.body.idCandidato, login.body)
+                metodos.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, login.body)
+            })
+        })
     });
 
     it('Validar criar candidato sem preencher campos', () => {

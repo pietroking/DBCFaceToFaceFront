@@ -9,7 +9,7 @@ const dashboardPage = new DashboardPage;
 context('Login', () => {
     it('Validar login com sucesso', () => {
         loginPage.loginNoSistema();
-        dashboardPage.validarNomeUser('Julio');
+        dashboardPage.validarNomeUser('Ályson');
     });
 
     it('Validar login com erro', () => {
