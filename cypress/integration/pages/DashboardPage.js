@@ -31,6 +31,9 @@ let scheduleBtn = "#root > div > div.MuiDrawer-root.MuiDrawer-docked.css-1tu59u4
 let editPerfilBtn = ".MuiList-root > :nth-child(6)"
 let logoutBtn = "#root > div > div.MuiDrawer-root.MuiDrawer-docked.css-1tu59u4 > div > div > div.MuiBox-root.css-1rr4qq7 > nav > div:nth-child(7)"
 let msgUserLogar = "#root > div > div.MuiDrawer-root.MuiDrawer-docked.css-1tu59u4 > div > div > div.MuiBox-root.css-16vpxei > p"
+let tipoGestao = '#root > div > div.MuiBox-root.css-v3si1q > div.MuiBox-root.css-69vuws > form > div.MuiBox-root.css-1tjw18l > div:nth-child(2) > div:nth-child(3) > div > div > div > label:nth-child(1)'
+let tipoInstrutor = '#root > div > div.MuiBox-root.css-v3si1q > div.MuiBox-root.css-69vuws > form > div.MuiBox-root.css-1tjw18l > div:nth-child(2) > div:nth-child(3) > div > div > div > label:nth-child(2)'
+let tipoAdmin = '#root > div > div.MuiBox-root.css-v3si1q > div.MuiBox-root.css-69vuws > form > div.MuiBox-root.css-1tjw18l > div:nth-child(2) > div:nth-child(3) > div > div > div > label:nth-child(3)'
 
 let testeElemento = '#root > div > div.MuiBox-root.css-v3si1q > div.MuiBox-root.css-uery8 > div.MuiBox-root.css-ufvb1 > div.MuiBox-root.css-1ofqig9 > div > div.MuiBox-root.css-1ofqig9 > div:nth-child(1)'
 
@@ -67,9 +70,11 @@ export default class DashboardPage extends BasePage {
     }
 
     editPerfilUserPage(){
-        basePage.tempo(5000)
         basePage.click(editPerfilBtn)
         cy.url(testeurl)
+        basePage.validarNotVisibilidade(tipoGestao)
+        basePage.validarNotVisibilidade(tipoInstrutor)
+        basePage.validarNotVisibilidade(tipoAdmin)
     }
 
     logout(){

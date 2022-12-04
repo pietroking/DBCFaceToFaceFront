@@ -42,9 +42,11 @@ context('fluxo teste', () => {
         dashboardPage.marcarEntrevistaCandidato();
         registerInterviewPage.criarEntrevistaTeste();
         dashboardPage.schedulePage();
+        schedulePage.validarElemento();
         schedulePage.clicarEntrevista();
         schedulePage.cancelarEntrevista();
         dashboardPage.schedulePage();
+        schedulePage.validarElementoInexistente();
 
         metodos.Login().then((login) => {
             metodos.GETcandidatoEmailRequest(email, login.body).then((candidato) => {

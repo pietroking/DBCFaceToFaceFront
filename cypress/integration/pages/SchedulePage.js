@@ -14,6 +14,14 @@ export default class RegisterCandidatePage extends BasePage {
     }
 
     cancelarEntrevista(){
-        basePage.click(cancelarBtn)
+        basePage.click(cancelarBtn);
+    }
+
+    validarElemento(){
+        basePage.validarVisibilidade(entrevistaTest);
+    }
+
+    validarElementoInexistente(){
+        basePage.validateNotExist(entrevistaTest);
     }
 }

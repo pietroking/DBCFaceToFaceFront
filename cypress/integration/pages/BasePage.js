@@ -47,7 +47,7 @@ export default class BasePage {
     }
     
     validateNotExist(element) {
-        cy.get(element).should("not.exist");
+        cy.get(element).should('not.exist');
     }
     
     validateIsDisabled(element) {
@@ -60,6 +60,10 @@ export default class BasePage {
 
     validarVisibilidade(element) {
       cy.get(element).scrollIntoView().should('be.visible') 
+    }
+
+    validarNotVisibilidade(element) {
+      cy.get(element).should('not.be.enabled') 
     }
   }
   

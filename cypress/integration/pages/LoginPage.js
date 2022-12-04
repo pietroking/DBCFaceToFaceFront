@@ -20,6 +20,7 @@ export default class LoginPage extends BasePage {
         basePage.preencherInput(username, userPrincipal)
         basePage.preencherInput(password, userPassword)
         basePage.click(loginBtn)
+        basePage.tempo(2000)
     }
 
     loginNoSistemaComSenhaErrada(){
