@@ -31,11 +31,8 @@ beforeEach(() => {
 
 
 context('fluxo teste', () => {
-    it('cadastro de candidato e marcaçao de entrevista', () => {
+    it.only('cadastro de candidato e marcaçao de entrevista', () => {
         dashboardPage.validarNomeUser('Ályson');
-        // dashboardPage.editPerfilUserPage();
-        // changePasswordPage.changePasswordPage();
-        // changePasswordPage.trocarSenhaSemPreencherCampos();
         dashboardPage.registerCandidatePage();
         registerCandidatePage.criarCandidatoCorretamente();
         dashboardPage.buscaCandidatoPorNome(nome);
@@ -50,7 +47,6 @@ context('fluxo teste', () => {
 
         metodos.Login().then((login) => {
             metodos.GETcandidatoEmailRequest(email, login.body).then((candidato) => {
-                // metodos.DELETEfisicoEntrevistaRequest(email, login.body)
                 metodos.DELETEfisicoCurriculoRequest(candidato.body.idCandidato, login.body)
                 metodos.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, login.body)
             })

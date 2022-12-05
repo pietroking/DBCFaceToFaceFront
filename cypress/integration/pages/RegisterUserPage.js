@@ -1,8 +1,6 @@
 import BasePage from "./BasePage";
 const basePage = new BasePage();
 
-import { faker } from '@faker-js/faker';
-
 let nome = "#name-register-user"
 let email = "#email-register-user"
 let cidade = "#cidade-register-user"
